@@ -11,6 +11,7 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.FileResource;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.server.VaadinService;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.tapio.googlemaps.GoogleMap;
 import com.vaadin.tapio.googlemaps.client.GoogleMapControl;
@@ -136,26 +137,12 @@ public class MedianPickupTimeUI extends UI {
 			CsvParser parser = new CsvParser(settings);
 			
 			// parse pickup_times.csv
-			String basePath = "src" + File.separator + "main" + File.separator
-					+ "webapp" + File.separator + "VAADIN" + File.separator;
-			File pickupTimesFile = null;
-			try {
-				String filePath = "VAADIN" + File.separator + "data" + File.separator + "pickup_times.csv";
-				BufferedReader reader = new BufferedReader(new FileReader(filePath));
-				reader.close();
-				pickupTimesFile = new File(filePath);
-			} catch (Exception e) {
-				String filePath = basePath + File.separator + "data" + File.separator + "pickup_times.csv";
-				try {
-					BufferedReader reader = new BufferedReader(new FileReader(filePath));
-					reader.close();
-					pickupTimesFile = new File(basePath + File.separator + "data" + File.separator + "pickup_times.csv");
-				} catch (FileNotFoundException e1) {
-					e1.printStackTrace();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
+			String basePath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath();
+			File pickupTimesFile = new File(basePath + File.separator + "VAADIN" + File.separator + "data" + File.separator + "pickup_times.csv");
+			if (!pickupTimesFile.exists() || !pickupTimesFile.isFile()) {
+				Notification.show("File pickup_times.csv not found", Notification.Type.ERROR_MESSAGE);
 			}
+			
 			parser.parse(pickupTimesFile);
 			
 			parser.getRecordMetadata().setTypeOfColumns(Long.class, "location_id", "pickup_time");
@@ -190,23 +177,9 @@ public class MedianPickupTimeUI extends UI {
 			}
 			
 			// parse locations.csv
-			File locationsFile = null;
-			try {
-				String filePath = "VAADIN" + File.separator + "data" + File.separator + "locations.csv";
-				BufferedReader reader = new BufferedReader(new FileReader(filePath));
-				reader.close();
-				locationsFile = new File(filePath);
-			} catch (Exception e) {
-				String filePath = basePath + File.separator + "data" + File.separator + "locations.csv";
-				try {
-					BufferedReader reader = new BufferedReader(new FileReader(filePath));
-					reader.close();
-					locationsFile = new File(filePath);
-				} catch (FileNotFoundException e1) {
-					e1.printStackTrace();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
+			File locationsFile = new File(basePath + File.separator + "VAADIN" + File.separator + "data" + File.separator + "locations.csv");
+			if (!locationsFile.exists() || !locationsFile.isFile()) {
+				Notification.show("File locations.csv not found", Notification.Type.ERROR_MESSAGE);
 			}
 			
 			parser.parse(locationsFile);
@@ -230,7 +203,7 @@ public class MedianPickupTimeUI extends UI {
 				int listSize = entry.getValue().size();
 				long median;
 				if (listSize % 2 == 0) {
-					median = (entry.getValue().get(listSize / 2) + entry.getValue().get(listSize / 2 - 1)) / 2;
+					median = (entry.getValue().get(listSize / 2) + entry.getValue().get(listSize / 2 - 1) + 1) / 2;
 				} else {
 					median = entry.getValue().get(listSize / 2);
 				}
@@ -244,7 +217,8 @@ public class MedianPickupTimeUI extends UI {
 				marker.setAnimationEnabled(false);
 				marker.setCaption(null);
 				marker.setDraggable(false);
-				marker.setIconUrl("VAADIN/markers/marker_blue" + Long.toString(median) + ".png");
+				marker.setIconUrl("VAADIN" + File.separator +  "markers" + File.separator
+						+ "marker_blue" + Long.toString(median) + ".png");
 				marker.setId(entry.getKey());
 				marker.setOptimized(true);
 				marker.setPosition(new LatLon(latLon.getLat(), latLon.getLon()));
@@ -262,7 +236,8 @@ public class MedianPickupTimeUI extends UI {
 				Label restaurantNameLabel = new Label("Restaurant name: " + Long.toString(entry.getKey()));
 				restaurantNameLabel.setWidthUndefined();
 				
-				FileResource resource = new FileResource(new File("src/main/webapp/VAADIN/default.jpg"));
+				FileResource resource = new FileResource(new File(basePath + File.separator + "VAADIN"
+						+ File.separator + "default.jpg"));
 				Image restaurantImage = new Image(null, resource);
 				restaurantImage.setSizeFull();
 				

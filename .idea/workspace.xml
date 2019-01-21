@@ -4,8 +4,8 @@
     <list default="true" id="46880fff-d6b0-43fa-8c32-6c7f2dbfb8e8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,8 +39,17 @@
       <file leaf-file-name="MedianPickupTimeUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="157" column="13" lean-forward="true" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+            <state relative-caret-position="249">
+              <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="565" column="13" selection-start-line="565" selection-start-column="8" selection-end-line="565" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -77,6 +86,8 @@
       <find>locations.csv</find>
       <find>.csv</find>
       <find>VAADIN</find>
+      <find>median =</find>
+      <find>throw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,7 +133,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1153" />
+    <option name="width" value="1035" />
     <option name="height" value="1132" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -170,6 +181,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="wolt-coding-task-2019-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="wolt-coding-task-2019-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,12 +339,12 @@
       <workItem from="1547858899148" duration="12976000" />
       <workItem from="1547909380989" duration="2036000" />
       <workItem from="1547912190125" duration="26605000" />
-      <workItem from="1548054841801" duration="5815000" />
+      <workItem from="1548054841801" duration="11946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47432000" />
+    <option name="totallyTimeSpent" value="53563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,7 +356,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1153" height="1132" extended-state="0" />
+    <frame x="0" y="23" width="1035" height="1132" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -326,16 +372,16 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.66156614" visible="true" weight="0.2864031" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.66156614" weight="0.2864031" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49954996" weight="0.3297975" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4491449" weight="0.3297975" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954996" weight="0.3297975" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49774978" weight="0.3297975" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49774978" visible="true" weight="0.3297975" />
       <window_info anchor="bottom" id="Problems" order="7" sideWeight="0.49893504" weight="0.3297975" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2610261" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2610261" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -410,7 +456,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="59" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="MavenRunConfiguration">
@@ -442,48 +488,52 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
+        <expression-string>basePath</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>File file = new File(basePath);
+file.listFiles()[0].getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>File file = new File(basePath);
+file.listFiles().length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>File file = new File(basePath);
+file.isDirectory()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>File file = new File(basePath);
+file.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pickupTimesFile.exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>VaadinService.getCurrent().getBaseDirectory().getAbsolutePath()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.vaadin.server.VaadinService</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>entry.getValue()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
         <expression-string>entry.getValue().get(listSize/2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pickupTimesMap.entrySet().iterator().next().getValue()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>boolean isTrue = (recordDate.getTime() == endingHour)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>boolean isTrue = (recordDate.getTime() == endingHour &amp;&amp; (recordDate.getMinutes() &gt; 0 || recordDate.getSeconds() &gt; 0));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>boolean isTrue = (recordDate.getHours() &lt; startingHour || (recordDate.getHours() &gt; endingHour &amp;&amp; endingHour != 0);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>boolean isTrue = (recordDate.getHours() &lt; startingHour || (recordDate.getHours() &gt; endingHour &amp;&amp; endingHour != 0)
-		|| (recordDate.getTime() == endingHour &amp;&amp; (recordDate.getMinutes() &gt; 0 || recordDate.getSeconds() &gt; 0)));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>if (recordDate.getHours() &lt; startingHour || (recordDate.getHours() &gt; endingHour &amp;&amp; endingHour != 0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pickupTimesMap.entrySet().iterator().next()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -782,10 +832,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="565" column="13" selection-start-line="565" selection-start-column="8" selection-end-line="565" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="157" column="13" lean-forward="true" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+        <state relative-caret-position="249">
+          <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
         </state>
       </provider>
     </entry>
