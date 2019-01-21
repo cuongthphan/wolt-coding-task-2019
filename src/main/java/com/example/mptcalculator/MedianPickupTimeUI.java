@@ -136,8 +136,14 @@ public class MedianPickupTimeUI extends UI {
 			CsvParser parser = new CsvParser(settings);
 			
 			// parse pickup_times.csv
-			String basePath = "src" + File.separator + "main" + File.separator + "resources" + File.separator;
-			File pickupTimesFile = new File(basePath + "pickup_times.csv");
+			String basePath = "src" + File.separator + "main" + File.separator
+					+ "webapp" + File.separator + "VAADIN" + File.separator;
+			File pickupTimesFile;
+			try {
+				pickupTimesFile = new File(basePath + File.separator + "data" + File.separator + "pickup_times.csv");
+			} catch (Exception e) {
+				pickupTimesFile = new File("VAADIN" + File.separator + "data" + File.separator + "pickup_times.csv");
+			}
 			parser.parse(pickupTimesFile);
 			
 			parser.getRecordMetadata().setTypeOfColumns(Long.class, "location_id", "pickup_time");
@@ -172,7 +178,13 @@ public class MedianPickupTimeUI extends UI {
 			}
 			
 			// parse locations.csv
-			File locationsFile = new File(basePath + "locations.csv");
+			File locationsFile;
+			try {
+				locationsFile = new File(basePath + File.separator + "data" + File.separator + "locations.csv");
+			} catch (Exception e) {
+				locationsFile = new File("VAADIN" + File.separator + "data" + File.separator + "locations.csv");
+			}
+			
 			parser.parse(locationsFile);
 			
 			parser.getRecordMetadata().setTypeOfColumns(Long.class, "location_id");

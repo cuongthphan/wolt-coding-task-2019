@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46880fff-d6b0-43fa-8c32-6c7f2dbfb8e8" name="Default" comment="" />
+    <list default="true" id="46880fff-d6b0-43fa-8c32-6c7f2dbfb8e8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/locations.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pickup_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,44 +41,8 @@
       <file leaf-file-name="MedianPickupTimeUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="157" column="49" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenInfoWindowOnMarkerClickListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/Events/OpenInfoWindowOnMarkerClickListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locations.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/locations.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pickup_times.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/pickup_times.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="236">
+              <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -88,11 +60,18 @@
     <findStrings>
       <find>time-only</find>
       <find>google</find>
-      <find>google</find>
       <find>googlemap</find>
       <find>invalid</find>
       <find>click</find>
+      <find>loca</find>
+      <find>location</find>
+      <find>location_id</find>
+      <find>calculate</find>
+      <find>locations.csv</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -108,6 +87,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/medianpickuptimecalculator/MedianPickupTimeUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/Events/OpenInfoWindowOnMarkerClickListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/pickup_times.csv" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" />
       </list>
     </option>
@@ -136,6 +116,7 @@
     <option name="width" value="1153" />
     <option name="height" value="1132" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -171,7 +152,8 @@
               <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mptcalculator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
@@ -179,76 +161,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.github.branflake2267:gwt-maps-api:3.10.0-alpha-7" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="googlemaps-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="googlemaps-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="googlemaps-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="googlemaps-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="googlemaps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="googlemaps-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="googlemaps" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.vaadin.tapio:googlemaps:2.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="googlemaps-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="googlemaps" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="overlays" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,6 +187,7 @@
       <recent name="com.example.mptcalculator.Events" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/VAADIN/data" />
       <recent name="$PROJECT_DIR$/src/main/webapp/VAADIN/markers" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -371,12 +284,12 @@
       <workItem from="1547858899148" duration="12976000" />
       <workItem from="1547909380989" duration="2036000" />
       <workItem from="1547912190125" duration="26605000" />
-      <workItem from="1548054841801" duration="957000" />
+      <workItem from="1548054841801" duration="3894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42574000" />
+    <option name="totallyTimeSpent" value="45511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -409,7 +322,7 @@
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4491449" weight="0.3297975" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954996" weight="0.3297975" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49774978" weight="0.3297975" />
       <window_info anchor="bottom" id="Problems" order="7" sideWeight="0.49893504" weight="0.3297975" />
@@ -488,15 +401,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java</url>
-          <line>156</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="MavenRunConfiguration">
@@ -528,6 +433,21 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
+        <expression-string>entry.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.getValue().get(listSize/2)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pickupTimesMap.entrySet().iterator().next().getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>boolean isTrue = (recordDate.getTime() == endingHour)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
@@ -554,22 +474,7 @@
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pickupTimesMap.entrySet().iterator().next().getValue()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
         <expression-string>pickupTimesMap.entrySet().iterator().next()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pickupTimesMap.entrySet().iterator().hasNext()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pickupTimesMap.entrySet().size()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -612,7 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/locations.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/locations.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
@@ -622,7 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pickup_times.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
@@ -649,7 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pickup_times.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
@@ -833,13 +738,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/locations.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="191">
+          <caret line="65357" column="26" lean-forward="true" selection-start-line="65357" selection-start-column="26" selection-end-line="65357" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/locations.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -853,18 +766,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pickup_times.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="25" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="157" column="49" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="49" />
+        <state relative-caret-position="236">
+          <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
         </state>
       </provider>
     </entry>
