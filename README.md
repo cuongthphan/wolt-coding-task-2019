@@ -1,8 +1,8 @@
 wolt-coding-task-2019
 ==============
 
-Template for a simple Vaadin application that only requires a Servlet 3.0 container to run.
-
+Median times are rounded up.
+Requires a Servlet 3.0 container to run.
 
 Workflow
 ========
