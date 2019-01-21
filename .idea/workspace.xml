@@ -4,10 +4,8 @@
     <list default="true" id="46880fff-d6b0-43fa-8c32-6c7f2dbfb8e8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/locations.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pickup_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +39,17 @@
       <file leaf-file-name="MedianPickupTimeUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
+            <state relative-caret-position="533">
+              <caret line="157" column="13" lean-forward="true" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -68,6 +75,8 @@
       <find>location_id</find>
       <find>calculate</find>
       <find>locations.csv</find>
+      <find>.csv</find>
+      <find>VAADIN</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -284,12 +293,12 @@
       <workItem from="1547858899148" duration="12976000" />
       <workItem from="1547909380989" duration="2036000" />
       <workItem from="1547912190125" duration="26605000" />
-      <workItem from="1548054841801" duration="3894000" />
+      <workItem from="1548054841801" duration="5815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45511000" />
+    <option name="totallyTimeSpent" value="47432000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +410,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="56" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="MavenRunConfiguration">
@@ -768,15 +777,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
+        <state relative-caret-position="533">
+          <caret line="157" column="13" lean-forward="true" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
         </state>
       </provider>
     </entry>

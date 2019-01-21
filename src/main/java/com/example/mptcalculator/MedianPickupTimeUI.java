@@ -19,7 +19,7 @@ import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapInfoWindow;
 import com.vaadin.tapio.googlemaps.client.overlays.GoogleMapMarker;
 import com.vaadin.ui.*;
 
-import java.io.File;
+import java.io.*;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.*;
@@ -138,11 +138,23 @@ public class MedianPickupTimeUI extends UI {
 			// parse pickup_times.csv
 			String basePath = "src" + File.separator + "main" + File.separator
 					+ "webapp" + File.separator + "VAADIN" + File.separator;
-			File pickupTimesFile;
+			File pickupTimesFile = null;
 			try {
-				pickupTimesFile = new File(basePath + File.separator + "data" + File.separator + "pickup_times.csv");
+				String filePath = "VAADIN" + File.separator + "data" + File.separator + "pickup_times.csv";
+				BufferedReader reader = new BufferedReader(new FileReader(filePath));
+				reader.close();
+				pickupTimesFile = new File(filePath);
 			} catch (Exception e) {
-				pickupTimesFile = new File("VAADIN" + File.separator + "data" + File.separator + "pickup_times.csv");
+				String filePath = basePath + File.separator + "data" + File.separator + "pickup_times.csv";
+				try {
+					BufferedReader reader = new BufferedReader(new FileReader(filePath));
+					reader.close();
+					pickupTimesFile = new File(basePath + File.separator + "data" + File.separator + "pickup_times.csv");
+				} catch (FileNotFoundException e1) {
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			}
 			parser.parse(pickupTimesFile);
 			
@@ -178,11 +190,23 @@ public class MedianPickupTimeUI extends UI {
 			}
 			
 			// parse locations.csv
-			File locationsFile;
+			File locationsFile = null;
 			try {
-				locationsFile = new File(basePath + File.separator + "data" + File.separator + "locations.csv");
+				String filePath = "VAADIN" + File.separator + "data" + File.separator + "locations.csv";
+				BufferedReader reader = new BufferedReader(new FileReader(filePath));
+				reader.close();
+				locationsFile = new File(filePath);
 			} catch (Exception e) {
-				locationsFile = new File("VAADIN" + File.separator + "data" + File.separator + "locations.csv");
+				String filePath = basePath + File.separator + "data" + File.separator + "locations.csv";
+				try {
+					BufferedReader reader = new BufferedReader(new FileReader(filePath));
+					reader.close();
+					locationsFile = new File(filePath);
+				} catch (FileNotFoundException e1) {
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			}
 			
 			parser.parse(locationsFile);
