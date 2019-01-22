@@ -43,6 +43,7 @@ public class MedianPickupTimeUI extends UI {
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setSizeFull();
 		
+		// build time selection bar
 		final HorizontalLayout timeSelectionLayout = new HorizontalLayout();
 		timeSelectionLayout.setCaption("Pickup times");
 		
@@ -75,12 +76,17 @@ public class MedianPickupTimeUI extends UI {
 		
 		timeSelectionLayout.addComponents(dateField, startingTimeSelect, endingTimeSelect);
 		
+		// build button bar
 		final HorizontalLayout buttonLayout = new HorizontalLayout();
 		
 		final Button calculateButton = new Button("Calculate MPT");
 		final Button downloadButton = new Button("Download as CSV");
 		
 		buttonLayout.addComponents(calculateButton, downloadButton);
+		
+		// build map
+		final HorizontalLayout mapLayout = new HorizontalLayout();
+		mapLayout.setSizeFull();
 		
 		AtomicReference<GoogleMap> mapAtomicReference = new AtomicReference<>();
 		GoogleMap map = new GoogleMap("AIzaSyA7g0qaNZwBYqX1pgj3N_Z_NkPdrQEddZA", null, "english");
@@ -93,16 +99,34 @@ public class MedianPickupTimeUI extends UI {
 		map.setSizeFull();
 		mapAtomicReference.set(map);
 		
-		layout.addComponents(timeSelectionLayout, buttonLayout, mapAtomicReference.get());
-		layout.setExpandRatio(mapAtomicReference.get(), 1);
+		// build the console
+		final Panel console = new Panel("location_id,median_pickup_time");
+		console.setWidth(300, Unit.PIXELS);
+		console.setHeight(100, Unit.PERCENTAGE);
+		console.addStyleName("console");
+		final VerticalLayout consoleLayout = new VerticalLayout();
+		console.setContent(consoleLayout);
+		
+		mapLayout.addComponents(mapAtomicReference.get(), console);
+		mapLayout.setExpandRatio(mapAtomicReference.get(), 1);
+		
+		layout.addComponents(timeSelectionLayout, buttonLayout, mapLayout);
+		layout.setExpandRatio(mapLayout, 1);
 		
 		setContent(layout);
 		
 		final AtomicReference<String> csvFileName = new AtomicReference<>();
 		
 		calculateButton.addClickListener(event -> {
+			// reset variables
+			medianTimesMap.clear();
+			if (fileDownloader.get() != null) {
+				downloadButton.removeExtension(fileDownloader.get());
+			}
+			fileDownloader.set(null);
+			
 			// refresh Map
-			layout.removeComponent(mapAtomicReference.get());
+			mapLayout.removeComponent(mapAtomicReference.get());
 			GoogleMap newMap = new GoogleMap("AIzaSyA7g0qaNZwBYqX1pgj3N_Z_NkPdrQEddZA", null, "english");
 			newMap.setCenter(new LatLon(60.1676093, 24.940554));
 			newMap.setZoom(13);
@@ -113,15 +137,11 @@ public class MedianPickupTimeUI extends UI {
 			newMap.setSizeFull();
 			mapAtomicReference.set(newMap);
 			
-			layout.addComponent(mapAtomicReference.get());
-			layout.setExpandRatio(mapAtomicReference.get(), 1);
+			mapLayout.addComponent(mapAtomicReference.get(), 0);
+			mapLayout.setExpandRatio(mapAtomicReference.get(), 1);
 			
-			// reset variables
-			medianTimesMap.clear();
-			if (fileDownloader.get() != null) {
-				downloadButton.removeExtension(fileDownloader.get());
-			}
-			fileDownloader.set(null);
+			// clear console
+			consoleLayout.removeAllComponents();
 			
 			// read date time input
 			Date date = Date.from(dateField.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant());
@@ -264,6 +284,12 @@ public class MedianPickupTimeUI extends UI {
 						+ "_" + Integer.toString(endingHour) + ".csv");
 				fileDownloader.set(new FileDownloader(resource));
 				fileDownloader.get().extend(downloadButton);
+			}
+			
+			// update console
+			consoleLayout.addComponent(new Label("location_id,median_pickup_time"));
+			for (Map.Entry<Long, Long> entry : medianTimesMap.entrySet()) {
+				consoleLayout.addComponent(new Label(entry.getKey().toString() + "," + entry.getValue()));
 			}
 		});
 		

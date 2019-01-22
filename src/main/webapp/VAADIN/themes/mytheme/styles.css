@@ -15053,3 +15053,7 @@ div.v-layout.v-horizontal.v-widget {
 .mytheme .time-only .v-inline-datefield-calendarpanel-header, .mytheme .time-only .v-inline-datefield-calendarpanel-body {
 	display: none;
 }
+
+.mytheme .console {
+	border: 1px solid #DCDCDC;
+}
