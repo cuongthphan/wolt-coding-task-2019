@@ -9,10 +9,7 @@ import com.univocity.parsers.csv.CsvParser;
 import com.univocity.parsers.csv.CsvParserSettings;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.server.FileResource;
-import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinService;
-import com.vaadin.server.VaadinServlet;
+import com.vaadin.server.*;
 import com.vaadin.tapio.googlemaps.GoogleMap;
 import com.vaadin.tapio.googlemaps.client.GoogleMapControl;
 import com.vaadin.tapio.googlemaps.client.LatLon;
@@ -39,6 +36,9 @@ public class MedianPickupTimeUI extends UI {
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
 		getPage().setTitle("Wolt Median Pickup Time");
+		
+		Map<Long, Long> medianTimesMap = new TreeMap<>();
+		AtomicReference<FileDownloader> fileDownloader = new AtomicReference<>();
 		
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setSizeFull();
@@ -98,7 +98,6 @@ public class MedianPickupTimeUI extends UI {
 		
 		setContent(layout);
 		
-		Map<Long, Long> medianTimesMap = new HashMap<>();
 		final AtomicReference<String> csvFileName = new AtomicReference<>();
 		
 		calculateButton.addClickListener(event -> {
@@ -116,7 +115,13 @@ public class MedianPickupTimeUI extends UI {
 			
 			layout.addComponent(mapAtomicReference.get());
 			layout.setExpandRatio(mapAtomicReference.get(), 1);
+			
+			// reset variables
 			medianTimesMap.clear();
+			if (fileDownloader.get() != null) {
+				downloadButton.removeExtension(fileDownloader.get());
+			}
+			fileDownloader.set(null);
 			
 			// read date time input
 			Date date = Date.from(dateField.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant());
@@ -217,7 +222,7 @@ public class MedianPickupTimeUI extends UI {
 				marker.setAnimationEnabled(false);
 				marker.setCaption(null);
 				marker.setDraggable(false);
-				marker.setIconUrl("VAADIN" + File.separator +  "markers" + File.separator
+				marker.setIconUrl("VAADIN" + File.separator + "markers" + File.separator
 						+ "marker_blue" + Long.toString(median) + ".png");
 				marker.setId(entry.getKey());
 				marker.setOptimized(true);
@@ -250,6 +255,16 @@ public class MedianPickupTimeUI extends UI {
 						new OpenInfoWindowOnMarkerClickListener(mapAtomicReference.get(), marker, infoWindow);
 				mapAtomicReference.get().addMarkerClickListener(infoWindowOpener);
 			}
+			
+			// create new FileDownloader for Download button
+			StreamResource resource = createResource(medianTimesMap);
+			if (resource != null) {
+				resource.setFilename("median_pickup_times_" + date.getDate() + "." + (date.getMonth() + 1)
+						+ "." + (date.getYear() + 1900) + "_" + Integer.toString(startingHour)
+						+ "_" + Integer.toString(endingHour) + ".csv");
+				fileDownloader.set(new FileDownloader(resource));
+				fileDownloader.get().extend(downloadButton);
+			}
 		});
 		
 		downloadButton.addClickListener(event -> {
@@ -257,6 +272,48 @@ public class MedianPickupTimeUI extends UI {
 				Notification.show("Calculate first", Notification.Type.WARNING_MESSAGE);
 			}
 		});
+	}
+	
+	private StreamResource createResource(Map<Long, Long> medianTimesMap) {
+		if (medianTimesMap == null || medianTimesMap.size() == 0) {
+			return null;
+		}
+		
+		try {
+			File file = File.createTempFile("temp", "csv");
+			PrintWriter writer = new PrintWriter(file);
+			StringBuilder stringBuilder = new StringBuilder();
+			stringBuilder.append("location_id");
+			stringBuilder.append(',');
+			stringBuilder.append("median_pickup_time");
+			stringBuilder.append('\n');
+			
+			Set<Long> idList = medianTimesMap.keySet();
+			for (Long id : idList) {
+				stringBuilder.append(id);
+				stringBuilder.append(',');
+				stringBuilder.append(medianTimesMap.get(id));
+				stringBuilder.append('\n');
+			}
+			
+			writer.write(stringBuilder.toString());
+			writer.close();
+			
+			return new StreamResource((StreamResource.StreamSource) () -> {
+				try {
+					return new FileInputStream(file);
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+					Notification.show(e.getLocalizedMessage(), Notification.Type.ERROR_MESSAGE);
+				}
+				return null;
+			}, null);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+			Notification.show(e.getLocalizedMessage(), Notification.Type.ERROR_MESSAGE);
+		}
+		return null;
 	}
 	
 	@WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)

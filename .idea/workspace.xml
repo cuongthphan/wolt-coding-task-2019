@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI$MyUIServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mptcalculator/MedianPickupTimeUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/wolt-coding-task-2019-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,26 +38,8 @@
       <file leaf-file-name="MedianPickupTimeUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="565" column="13" selection-start-line="565" selection-start-column="8" selection-end-line="565" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="398">
+              <caret line="262" column="94" lean-forward="true" selection-start-line="262" selection-start-column="94" selection-end-line="262" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -189,15 +170,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="woltcodingtask2019" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="VAADIN" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="woltcodingtask2019" type="b2602c69:ProjectViewProjectNode" />
@@ -339,12 +311,13 @@
       <workItem from="1547858899148" duration="12976000" />
       <workItem from="1547909380989" duration="2036000" />
       <workItem from="1547912190125" duration="26605000" />
-      <workItem from="1548054841801" duration="11946000" />
+      <workItem from="1548054841801" duration="16503000" />
+      <workItem from="1548169706807" duration="2035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53563000" />
+    <option name="totallyTimeSpent" value="60155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,36 +337,37 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Console" order="7" sideWeight="0.33843383" side_tool="true" weight="0.2864031" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="IvyIDEA" order="7" sideWeight="0.49946752" weight="0.3297975" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" weight="0.32943293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.66156614" weight="0.2864031" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.66156614" visible="true" weight="0.2864031" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49954996" weight="0.3297975" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4491449" weight="0.3297975" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954996" weight="0.3297975" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49774978" visible="true" weight="0.3297975" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49774978" weight="0.3297975" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26082578" />
       <window_info anchor="bottom" id="Problems" order="7" sideWeight="0.49893504" weight="0.3297975" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2610261" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49774978" weight="0.3297975" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49774978" weight="0.3297975" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" sideWeight="0.49946752" weight="0.3297975" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6741674" weight="0.39922854" />
       <window_info id="Designer" order="5" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="2" side_tool="true" />
@@ -418,13 +392,12 @@
       <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5058506" side_tool="true" visible="true" weight="0.3297975" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="IvyIDEA" order="17" sideWeight="0.49946752" weight="0.3297975" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49774978" weight="0.3297975" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6741674" weight="0.39922854" />
+      <window_info anchor="bottom" id="IvyIDEA" order="17" sideWeight="0.49946752" weight="0.3297975" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,13 +429,8 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="63" />
+      <option name="time" value="72" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="MavenRunConfiguration">
-        <watch expression="recordDate" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
@@ -488,52 +456,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>basePath</expression-string>
+        <expression-string>date.getDate()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>File file = new File(basePath);
-file.listFiles()[0].getName()</expression-string>
+        <expression-string>date.getMonth()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>File file = new File(basePath);
-file.listFiles().length</expression-string>
+        <expression-string>date.getCalendarDate().getMonth()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>File file = new File(basePath);
-file.isDirectory()</expression-string>
+        <expression-string>date.getCalendarDate().getDayOfMonth()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>File file = new File(basePath);
-file.getName()</expression-string>
+        <expression-string>date.getCalendarDate().getCachedYear()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pickupTimesFile.exists()</expression-string>
+        <expression-string>date.getCalendarDate()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>VaadinService.getCurrent().getBaseDirectory().getAbsolutePath()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>com.vaadin.server.VaadinService</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>entry.getValue()</expression-string>
+        <expression-string>date.getYear()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>entry.getValue().get(listSize/2)</expression-string>
+        <expression-string>date</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>recordDate.getYear()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -571,29 +534,57 @@ file.getName()</expression-string>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4425">
+          <caret line="316" column="20" selection-start-line="316" selection-start-column="20" selection-end-line="316" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.4.1/vaadin-server-8.4.1-sources.jar!/com/vaadin/server/FileDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7860">
+          <caret line="565" column="13" selection-start-line="565" selection-start-column="8" selection-end-line="565" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3210">
           <caret line="237" column="96" selection-start-line="237" selection-start-column="90" selection-end-line="237" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/locations.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="3810">
           <caret line="254" column="26" selection-start-line="254" selection-start-column="26" selection-end-line="254" selection-end-column="26" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/Events/OpenInfoWindowOnMarkerClickListener.java">
@@ -614,10 +605,10 @@ file.getName()</expression-string>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,23 +750,6 @@ file.getName()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="790" column="15" selection-start-line="790" selection-start-column="15" selection-end-line="790" selection-end-column="15" />
-          <folding>
-            <element signature="e#30042#30043#0" expanded="true" />
-            <element signature="e#30120#30121#0" expanded="true" />
-            <element signature="e#31971#31972#0" expanded="true" />
-            <element signature="e#32021#32022#0" expanded="true" />
-            <element signature="e#33584#33585#0" expanded="true" />
-            <element signature="e#33655#33656#0" expanded="true" />
-            <element signature="e#34244#34245#0" expanded="true" />
-            <element signature="e#34289#34290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/tapio/googlemaps/2.1.0/googlemaps-2.1.0-sources.jar!/com/vaadin/tapio/googlemaps/client/layers/GoogleMapKmlLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
@@ -798,21 +772,21 @@ file.getName()</expression-string>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/pickup_times.csv">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="191">
           <caret line="65357" column="26" lean-forward="true" selection-start-line="65357" selection-start-column="26" selection-end-line="65357" selection-end-column="26" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/data/locations.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/Events/OpenInfoWindowOnMarkerClickListener.java">
@@ -834,15 +808,39 @@ file.getName()</expression-string>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="7860">
           <caret line="565" column="13" selection-start-line="565" selection-start-column="8" selection-end-line="565" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/8.4.1/vaadin-server-8.4.1-sources.jar!/com/vaadin/server/FileDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-853">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="734" column="15" selection-start-line="734" selection-start-column="15" selection-end-line="734" selection-end-column="15" />
+          <folding>
+            <element signature="e#30042#30043#0" expanded="true" />
+            <element signature="e#30120#30121#0" expanded="true" />
+            <element signature="e#31971#31972#0" expanded="true" />
+            <element signature="e#32021#32022#0" expanded="true" />
+            <element signature="e#33584#33585#0" expanded="true" />
+            <element signature="e#33655#33656#0" expanded="true" />
+            <element signature="e#34244#34245#0" expanded="true" />
+            <element signature="e#34289#34290#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mptcalculator/MedianPickupTimeUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="220" column="24" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
+        <state relative-caret-position="398">
+          <caret line="262" column="94" lean-forward="true" selection-start-line="262" selection-start-column="94" selection-end-line="262" selection-end-column="94" />
         </state>
       </provider>
     </entry>
