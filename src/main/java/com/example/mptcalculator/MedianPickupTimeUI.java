@@ -89,14 +89,7 @@ public class MedianPickupTimeUI extends UI {
 		mapLayout.setSizeFull();
 		
 		AtomicReference<GoogleMap> mapAtomicReference = new AtomicReference<>();
-		GoogleMap map = new GoogleMap("AIzaSyA7g0qaNZwBYqX1pgj3N_Z_NkPdrQEddZA", null, "english");
-		map.setCenter(new LatLon(60.1676093, 24.940554));
-		map.setZoom(13);
-		map.setMinZoom(8);
-		map.removeControl(GoogleMapControl.MapType);
-		map.removeControl(GoogleMapControl.StreetView);
-		map.removeControl(GoogleMapControl.Scale);
-		map.setSizeFull();
+		GoogleMap map = createMap();
 		mapAtomicReference.set(map);
 		
 		// build the console
@@ -127,14 +120,7 @@ public class MedianPickupTimeUI extends UI {
 			
 			// refresh Map
 			mapLayout.removeComponent(mapAtomicReference.get());
-			GoogleMap newMap = new GoogleMap("AIzaSyA7g0qaNZwBYqX1pgj3N_Z_NkPdrQEddZA", null, "english");
-			newMap.setCenter(new LatLon(60.1676093, 24.940554));
-			newMap.setZoom(13);
-			newMap.setMinZoom(8);
-			newMap.removeControl(GoogleMapControl.MapType);
-			newMap.removeControl(GoogleMapControl.StreetView);
-			newMap.removeControl(GoogleMapControl.Scale);
-			newMap.setSizeFull();
+			GoogleMap newMap = createMap();
 			mapAtomicReference.set(newMap);
 			
 			mapLayout.addComponent(mapAtomicReference.get(), 0);
@@ -297,6 +283,18 @@ public class MedianPickupTimeUI extends UI {
 				Notification.show("Calculate first", Notification.Type.WARNING_MESSAGE);
 			}
 		});
+	}
+	
+	private GoogleMap createMap() {
+		GoogleMap map = new GoogleMap("AIzaSyA7g0qaNZwBYqX1pgj3N_Z_NkPdrQEddZA", null, "english");
+		map.setCenter(new LatLon(60.1676093, 24.940554));
+		map.setZoom(13);
+		map.setMinZoom(8);
+		map.removeControl(GoogleMapControl.MapType);
+		map.removeControl(GoogleMapControl.StreetView);
+		map.removeControl(GoogleMapControl.Scale);
+		map.setSizeFull();
+		return map;
 	}
 	
 	private StreamResource createResource(Map<Long, Long> medianTimesMap) {
