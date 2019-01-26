@@ -287,7 +287,6 @@ public class MedianPickupTimeUI extends UI {
 			}
 			
 			// update console
-			consoleLayout.addComponent(new Label("location_id,median_pickup_time"));
 			for (Map.Entry<Long, Long> entry : medianTimesMap.entrySet()) {
 				consoleLayout.addComponent(new Label(entry.getKey().toString() + "," + entry.getValue()));
 			}
