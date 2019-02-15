@@ -1,6 +1,7 @@
 wolt-coding-task-2019
 ==============
 
+Data is only available from 7-13.01.2019
 Median times are rounded up.
 Requires a Servlet 3.0 container to run.
 
